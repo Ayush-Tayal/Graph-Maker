@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Graph-Maker/static/css/main.9a8f25fa.css",
+    "main.js": "/Graph-Maker/static/js/main.52736906.js",
+    "static/js/787.39954917.chunk.js": "/Graph-Maker/static/js/787.39954917.chunk.js",
+    "index.html": "/Graph-Maker/index.html",
+    "main.9a8f25fa.css.map": "/Graph-Maker/static/css/main.9a8f25fa.css.map",
+    "main.52736906.js.map": "/Graph-Maker/static/js/main.52736906.js.map",
+    "787.39954917.chunk.js.map": "/Graph-Maker/static/js/787.39954917.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a8f25fa.css",
+    "static/js/main.52736906.js"
+  ]
+}
