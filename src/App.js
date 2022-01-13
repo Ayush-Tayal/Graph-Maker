@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import { Button } from '@mui/material';
+import { useState } from 'react';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import UserInput from './Components/UserInput/UserInput';
+import { showNotification } from './Notification';
 
 function App() {
+  const [enterApp, setenterApp] = useState(false)
+  const [showHome, setshowHome] = useState(true)
+
+  const handleClickMe = () => {
+    setshowHome(false)
+    setenterApp(true);
+    showNotification("Success", "success", "1000")
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      
+      {
+        showHome && 
+        <div id='home'>
+        <h1> Click here to Enter App </h1>
+        <Button variant='contained' onClick={handleClickMe}> Click Me.! </Button>
+      </div>
+      }
+
+      {
+        enterApp && <UserInput/>
+      }
+
+
     </div>
   );
 }

@@ -1,0 +1,50 @@
+#main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#user-comp {
+    width: 48%;
+}
+
+#userInput {
+    margin-top: 5vh;
+    padding-bottom: 20px;
+}
+
+#input {
+    display: flex;
+    justify-content: center;
+}
+
+#input div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px ;
+}
+
+#input div label {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+#input div input {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#add-row-btn button, #create-graph-btn button {
+    margin: 10px;
+    width: 50%;
+    padding: 8px;
+}
+
+#graph-comp {
+    border-left: 1px solid grey;
+    padding-left: 20px ;
+    width: 48%;
+}
